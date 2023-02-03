@@ -4,19 +4,41 @@
     --dark-txt-color: #000000;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 body{
     font-family: var(--main-font), sans-serif;
     background-color: #f5f7fa;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
-    
 }
 
 .main{
     display: flex;
     flex-direction: row-reverse;
     width: 1200px;
-    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-content{
@@ -42,6 +64,10 @@ margin-bottom: 40px;
     line-height: 1.21;
     color: var(--dark-txt-color);
     margin-bottom: 25px;
+}
+
+.about-summary{
+    margin-bottom: 10px;
 }
 
 .about-description{
@@ -93,7 +119,6 @@ margin-bottom: 40px;
 
 .work-position{
     font-weight: 700;
-    font-size: 16px;
     line-height: 1.25;
     color: var(--dark-txt-color);
     margin-bottom: 10px;
